@@ -1,0 +1,7 @@
+Feature 1,Feature 2,Correlation (%),Description
+Edge Density,Mean RGB Intensity,72.32,Correlation between Edge Density and Mean RGB Intensity for leaf disease detection.
+Lesion Area,Mean RGB Intensity,69.66,Correlation between Lesion Area and Mean RGB Intensity for leaf disease detection.
+Mean RGB Intensity,Texture Variance,73.25,Correlation between Mean RGB Intensity and Texture Variance for leaf disease detection.
+Edge Density,Texture Variance,70.54,Correlation between Edge Density and Texture Variance for leaf disease detection.
+Lesion Area,Texture Variance,67.68,Correlation between Lesion Area and Texture Variance for leaf disease detection.
+Edge Density,Lesion Area,69.19,Correlation between Edge Density and Lesion Area for leaf disease detection.
