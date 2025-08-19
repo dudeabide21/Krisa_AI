@@ -44,7 +44,7 @@ for k, col in zip(unique_labels, colors[: len(unique_labels)]):
 # Labels and title
 plt.xlabel("Mean RGB Intensity (Normalized)")
 plt.ylabel("Texture Variance (Normalized)")
-plt.title("DBSCAN Clustering for Leaf Disease Detection (KRISHA Tower)")
+plt.title("DBSCAN Clustering for Leaf Disease Detection (KRISA Tower)")
 plt.grid(True, linestyle="--", alpha=0.7)
 plt.legend()
 plt.annotate(
@@ -54,4 +54,5 @@ plt.annotate(
     arrowprops=dict(facecolor="black", shrink=0.05),
 )
 plt.tight_layout()
+plt.savefig("dbscan_leaf_disease_clusters.png", dpi=300, bbox_inches="tight")
 plt.show()
