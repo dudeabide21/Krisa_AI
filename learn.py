@@ -61,20 +61,6 @@ corr_table = corr_table[["Feature 1", "Feature 2", "Correlation (%)", "Descripti
 # Save to CSV
 corr_table.to_csv("leaf_feature_correlation_table.csv", index=False)
 
-# Generate LaTeX table
-latex_table = corr_table.to_latex(
-    index=False,
-    column_format="p{3cm}|p{3cm}|c|p{8cm}",
-    caption="Correlation Metrics for Leaf Features in Crop Disease Diagnosis (Smart Krishi Tower)",
-    label="tab:corr_metrics",
-    float_format="%.2f",
-    header=["Feature 1", "Feature 2", "Correlation (%)", "Description"],
-)
-
-# Save LaTeX table
-with open("leaf_feature_correlation_table.tex", "w") as f:
-    f.write(latex_table)
-
 # Print table for verification
 print("Formal Correlation Table for Leaf Feature Analysis:")
 print(corr_table)
